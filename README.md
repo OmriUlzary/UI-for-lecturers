@@ -1,79 +1,10 @@
-# UI-for-lecturers
 
-Analysis complexity running time of the functions in part A:
-Doubly linked list 	Linked list 	Function
-θ1
-θ1
-count(self)
-On
-θn
-get_sub_item(self, items)
-On
-On
-search_value(self, value)
-θ1
-θ1
-is_even(self)
-θn
-θn
-split_linked_list(self, index)
-O1
-O1
-Add_new_head(self, index)
-O1
-θn
-Add_at_end(self, index)
-θn
-θn
-Serialize(self)
-θn
-θn
-_str_(self)
-θn
-θn
-save_to_file()
-
-
-
-
-
- 
-
-
-
-3.
-Part B – Grading System Data Structure
+Grading System Data Structure
 In this part of the assignment, we were asked to build a new grading system that should serve the lecturers in "Shenkar" college for the students of industrial engineering and management. we built two classes: student and course which help the main (user interface) to operate the system. 
 We implemented the data structure of the system using dictionaries. When choosing function number 1 in the user interface, the user chooses to add a course to the global courses dictionary. This dictionary is mapped in that the dictionary key is the course name and the dictionary value is the object course created in the course class. This object gets the attributes: course name, level, and course number.
 When the user selects function number 2 in the user interface, the option opens to add a student to the global students dictionary. This dictionary is mapped in that its key is the student id and the dictionary values are the student object created in the student class with the attributes: name, id, and year of studying.
 We chose to use this data structure because of its running time for insert and search is constant O(1). In addition, the dictionary is spent less memory volume relative to other data structures.
-
-Illustration of the data structure:
-
-Value
-Key
-Algo, Easy, 1	Algo
-Math, Hard, 2	Math
-Bi, Medium, 3	Bi
-  
-
-
-Value	Key
-311144356, Omri, 3	311144356
-312535669, Matan, 3	312535669
-315371583, Shir, 3	315371583
-  
-
-
-
-
-
-
-
-
-
-4.
-Part B – Grading System Time Complexity
+Grading System Time Complexity
 There are 7 buttons from 0 to 6 the user can press and use those options. In each option we will analyze the process and determine the time complexity.
 Input 0 ("Exit") – by pressing this button the program print "bye-bye" and the use of the interface will stop.                                                                                                                                                                           Time complexity – θ(1).
 Input 1 ("Add Course") – The lecturer provides the course name and the level of the course.  The system checks edge cases before adding the course to the dictionary which called "courses" and finally if there are no problems with the lecturer input, the course will be added to the courses dictionary. 
